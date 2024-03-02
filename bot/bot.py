@@ -88,7 +88,7 @@ Preset Notifications:\n
             my_notifs_message = "You don't have any notifications yet!"
 
         else:
-            my_notifs_message = f"Here are your notifications: \n"
+            my_notifs_message = "Here are your notifications: \n"
             for index, notification in enumerate(notifications):
                 my_notifs_message += f"{index+1}. {notification} \n"
         bot.reply_to(message, my_notifs_message)
